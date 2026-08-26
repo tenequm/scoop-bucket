@@ -19,4 +19,6 @@ scoop install pond
 
 Manifests track the `x86_64-pc-windows-msvc` zip attached to each [pond release](https://github.com/tenequm/pond/releases). Excavator updates them automatically every four hours; the hash comes from the release asset's own digest.
 
-pond is also on winget (`winget install tenequm.pond`).
+No Scoop? Install it first: `irm get.scoop.sh | iex` (needs an execution policy of `RemoteSigned` or looser: `Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser`).
+
+winget support is in review at [winget-pkgs](https://github.com/microsoft/winget-pkgs/pull/419055); `winget install tenequm.pond` starts working once it merges.
